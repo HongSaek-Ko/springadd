@@ -76,10 +76,10 @@ public class HomeController {
 
     // /hello/world?id=java&pw=1234&abc=null ... 으로 GET 요청이 들어온다 쳤을 때,
     @GetMapping("/world")
-    public String helloWorld(
+    public String helloWorld() {
             /*@RequestParam(value = "id", required = false) String id,
             @RequestParam(value = "pw", required = false) String pw,
-            @RequestParam(value = "abc", defaultValue = "0") int abc*/) {
+            @RequestParam(value = "abc", defaultValue = "0") int abc*/
         return "helloWorld";
     }
 
@@ -101,6 +101,4 @@ public class HomeController {
         return "helloWorld";
     }
 
-    // 파라미터 수집
-    // @RequestParam("id") String id
 }

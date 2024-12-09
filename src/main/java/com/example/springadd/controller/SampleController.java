@@ -20,7 +20,6 @@ import java.util.List;
 @RequestMapping("/sample")
 @Controller // '컨트롤러'로 선언, spring bean으로 등록
 public class SampleController {
-
     // Controller에서 메서드의 기본적인 구조
     @GetMapping("/test") // url.
     public String test(Model model, HttpServletRequest request) {
@@ -41,7 +40,6 @@ public class SampleController {
                             // static prefix (JS, CSS, 이미지 등 리소스들)
                         // .html 생략 (suffix 지정되어있음)
     }
-
     // 화면에서 ajax 요청 (화면 요청 X, 데이터만 요청.)
     @GetMapping("/mypage")
     @ResponseBody // html 응답 X, 데이터 응답 // Co
